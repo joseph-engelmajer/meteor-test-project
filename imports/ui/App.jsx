@@ -1,34 +1,22 @@
 import React, { Component } from 'react';
- 
-import User from './User.jsx';
+import AccountsUiWrapper from './AccountsUiWrapper.jsx'; 
  
 // App component - represents the whole app
 export default class App extends Component {
-  getUsers() {
-    return [
-      { _id: 1, username: "JoJo" },
-      { _id: 2, username: "Cusna" },
-      { _id: 3, username: "Selo" },
-    ];
-  }
- 
-  renderUsers() {
-    return this.getUsers().map((user) => (
-      <User key={user._id} user={user} />
-    ));
-  }
  
   render() {
-    return (
+    return(
       <div className="container">
         <header>
-          <h1>Edit User Greeting</h1>
+          <h1>Welcome To The Jenge Jungle Bitches</h1>
         </header>
- 
+        <div>
+          <AccountsUiWrapper />
+        </div>
         <ul>
-          {this.renderUsers()}
+          
         </ul>
       </div>
-    );
+    )
   }
 }
