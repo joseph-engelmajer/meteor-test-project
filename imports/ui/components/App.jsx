@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AccountsUiWrapper from './AccountsUiWrapper.jsx'; 
  
 // App component - represents the whole app
 export default class App extends Component {
@@ -11,7 +10,8 @@ export default class App extends Component {
           <h1>Welcome To The Jenge Jungle Bitches</h1>
         </header>
         <div>
-          <AccountsUiWrapper />
+          <div> <a href="/signin">Sign In</a> </div>
+          <div> <a href="/join">Join</a> </div>
         </div>
         <ul>
           
