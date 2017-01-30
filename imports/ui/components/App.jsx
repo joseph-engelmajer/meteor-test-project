@@ -10,8 +10,9 @@ export default class App extends Component {
           <h1>Welcome To The Jenge Jungle Bitches</h1>
         </header>
         <div>
-          <div> <a href="/signin">Sign In</a> </div>
-          <div> <a href="/join">Join</a> </div>
+          <div> <a href="/update"> Update Users </a> </div>
+          <div> <a href="/signIn"> Sign In </a> </div>
+          <div> <a href="/join"> Join </a> </div>
         </div>
         <ul>
           
