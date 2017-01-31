@@ -11,5 +11,5 @@ AccountsTemplates.addField({
 });
 
 Accounts.onLogin(function() {
-  browserHistory.push('/app/update');
+  browserHistory.push('/update');
 });

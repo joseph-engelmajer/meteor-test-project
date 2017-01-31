@@ -20,7 +20,7 @@ Meteor.startup(() => {
         <Route path="/signIn" component={ signIn } />
       </Route>
       <Route path="/app" component={ AuthenticatedApp } >
-        <Route path="app/update" component={ UpdateUsersContainer } />
+        <Route path="/update" component={ UpdateUsersContainer } />
       </Route>
     </Router>, 
     document.getElementById('render-target')

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Meteor } from 'meteor/meteor';
-import AppNav from '/imports/ui/components/AppNav.jsx'
+import AppNav from '/imports/ui/components/AppNav.jsx';
 import { Router, Route, browserHistory } from 'react-router';
 
 export default class AuthenticatedApp extends Component {
@@ -9,7 +9,7 @@ export default class AuthenticatedApp extends Component {
     super(props);
 
     this.state = {
-      isAuthenticated: null,
+      isAuthenticated: 'truthy placeholder for debugging purposes',
     };
   }
 
