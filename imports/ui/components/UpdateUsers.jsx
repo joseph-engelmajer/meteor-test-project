@@ -15,6 +15,12 @@ export default class UpdateUsers extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  requireAuth() {
+    if (!Meteor.user()) {
+      browserHistory.push('/signIn')
+    }
+  }
+
   handleSelectChange(event) {
     this.setState({ userId: event.target.value });
   }
