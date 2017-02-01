@@ -58,15 +58,15 @@ export default class UpdateUsers extends React.Component {
     })
 
     return (
-      <div id="container">
-        <select id='user-select' value={this.state.userId} onChange={this.handleSelectChange}>
+      <div id="update-container" className="flex-column flex-center">
+        <select className="flex-row flex-center" id='user-select' value={this.state.userId} onChange={this.handleSelectChange}>
           <option disabled> select a user </option>
           {selectUsers}
         </select>
 
-        <form onSubmit={this.handleSubmit}>
-         <input type='text' value={this.state.comment} ref='comment' name='comment' onChange={this.handleInputChange} placeholder='add comment to user'></input>
-         <input type="submit" value="Submit" onClick={this.handleSubmit}></input>
+        <form className="flex-row flex-center" onSubmit={this.handleSubmit}>
+         <input id="comment-field" type='text' value={this.state.comment} ref='comment' name='comment' onChange={this.handleInputChange} placeholder='add comment to user'></input>
+         <input className="submit-button" type="submit" value="Submit" onClick={this.handleSubmit}></input>
         </form>
       </div>
     ) 

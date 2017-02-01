@@ -36,13 +36,13 @@ export default class AuthenticatedApp extends Component {
   render() {
     return (
       <div className="app-container">
-        <header>
+        <header className="title flex-row flex-center">
           <h1>Welcome Back Fam</h1>
         </header>
-
-        <AppNav />
         
-        <div>
+        <AppNav />
+
+        <div className="child-container flex-row flex-center">
           {this.props.children}
         </div>
       </div>

@@ -7,13 +7,13 @@ export default class App extends Component {
   render() {
     return(
       <div className="app-container">
-        <header>
+        <header className="title flex-row flex-center">
           <h1>Welcome To The Jenge Jungle Bitches</h1>
         </header>
 
         <AppNav />
         
-        <div>
+        <div className="child-container flex-row flex-center">
           {this.props.children}
         </div>
       </div>

@@ -3,7 +3,7 @@ import Blaze from 'meteor/gadicc:blaze-react-component';
 
 export const signIn = () => { 
   return (
-    <div>
+    <div className="atForm-wrapper flex-row flex-center">
       <Blaze template="atForm" state="signIn"/>
     </div>
   )

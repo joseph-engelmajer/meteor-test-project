@@ -11,11 +11,11 @@ export default class AppNav extends Component {
   }
 
   render(){    
-    const signIn = <li className="nav-item"> <a href="/signIn"> Sign In </a> </li>;
-    const signOut = <li className="nav-item" onClick={this.logOut}> Log Out </li>;
+    const signIn = <li> <a href="/signIn"> Sign In </a> </li>;
+    const signOut = <li onClick={this.logOut}> <a href="/"> Log Out </a> </li>;
 
     return (
-      <div className="main-nav">
+      <div className="main-nav flex-row flex-end">
         <li> <a href="/update"> Update Users </a> </li>
         { Meteor.user() ? signOut : signIn }
         <li> <a href="/join"> Join </a> </li>
