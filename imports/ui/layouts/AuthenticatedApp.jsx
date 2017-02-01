@@ -9,7 +9,7 @@ export default class AuthenticatedApp extends Component {
     super(props);
 
     this.state = {
-      isAuthenticated: 'truthy placeholder for debugging purposes',
+      isAuthenticated: '',
     };
   }
 
